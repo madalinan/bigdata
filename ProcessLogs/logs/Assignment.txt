@@ -1,0 +1,18 @@
+Assignment # 1 "Getting a taste for Big Data"
+
+Searching in a set of Apache logs, compute how much bandwidth an IP has used.
+
+Apache logs are text files, compressed using gzip, sitting in a directory on disk. Files have the extension '.log.gz'. The text file format is documented in the attached picture.
+
+Write a program that accepts an IP address (a string) and prints out a number - the bandwidth consumed, in bytes.
+
+You can use any programming language (Java, Scala, PHP, Bash, C++, ...), and/or any technology (Hadoop MapReduce, MySQL, Spark, MongoDB, etc)
+
+Think about these concerns:
+- Speed of processing
+- Degree of parallelism
+- Least IO (try to gunzip on the fly!)
+- How short the code is
+- How much latency your program has; i.e. how much time passes from the arrival of a new log file until the statistics are up to date.
+
+An example set of log files is attached.
